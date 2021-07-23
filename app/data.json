@@ -1,0 +1,242 @@
+{
+  "version": "v2",
+  "intents": 
+  {
+    "yes": 
+    {
+      "includes": [
+        "yes",
+        "correct",
+        "sure",
+        "absolutely",
+        "yes siree bob",
+        "right",
+        "yep",
+        "you got it",
+        "I would",
+        "yeah",
+        "I would",
+        "I'd like that",
+        "I wouldn't mind",
+        "I would not mind",
+        "sure thing",
+        "yeah",
+        "yea",
+        "certainly",
+        "absolutely",
+        "totally",
+        "mhm"
+      ],
+      "excludes": [
+        "fuck off"
+      ]
+    },
+    "no": {
+      "includes": [
+        "no",
+        "definitely not",
+        "wrong",
+        "incorrect",
+        "I do not",
+        "I don't",
+        "I would not",
+        "I wouldn't",
+        "nope",
+        "no, I'm okay",
+        "not right now",
+        "not this time",
+        "nah",
+        "not this moment",
+        "not now"
+      ],
+      "excludes": [
+        "yes"
+      ]
+    },
+    "can_call": 
+    {
+      "includes": [
+        "I'd like to receive a call",
+        "will someone call me",
+        "will call me",
+        "call me",
+        "can call",
+        "could someone call",
+        "could call",
+        "will call",
+        "might call",
+        "will someone call me before they deliver",
+        "will someone call me before",
+        "can someone call before the package gets delivered",
+        "would someone call",
+        "can someone call",
+        "could you guys give me a call",
+        "you guys call",
+        "call"
+      ]
+      },
+    "free_delivery": {
+      "includes": [
+        "free",
+        "pay for",
+        "is the delivery free",
+        "pay",
+        "do I need to pay",
+        "cost",
+        "does the delivery cost",
+        "would I need to pay",
+        "have to pay",
+        "need to pay"
+      ]
+    },
+    "track": {
+      "includes": [
+        "track",
+        "track my package",
+        "delivery status",
+        "delivery update",
+        "delivery",
+        "update",
+        "status",
+        "check the status of my delivery",
+        "check the status of my package",
+        "I'd like to track my package",
+        "I want to check when my package is coming",
+        "I want to check when my package is arriving",
+        "I want to check if my package will arrive on time",
+        "will come on time",
+        "what day my package is arriving"
+      ]
+    },
+    "change_delivery_day": {
+      "includes": [
+        "I'd like to change the day my package is delivered",
+        "can I change the day",
+        "can I change the day my package is going to be delivered",
+        "can I change the day of the delivery",
+        "day of the delivery",
+        "day of delivery",
+        "delivery date",
+        "the day the package will be delivered",
+        "change the date of the delivery",
+        "date of the delivery"
+      ]
+    },
+    "track_num": {
+      "includes": [
+        "my track number is",
+        "track number",
+        "tracking number is",
+        "tracking number",
+        "my tracking number is",
+        "number to track",
+        "the number",
+        "the number you can use to track",
+        "the number is"
+      ]
+    },
+    "change_time_of_day": {
+      "includes": [
+        "I'd like to change the time my package is delivered",
+        "can I change the time",
+        "can I change the time my package is going to be delivered",
+        "can I change the time of the delivery",
+        "time of the delivery",
+        "time of delivery"
+      ]
+    },
+    "can_help": {
+      "includes": [
+        "can you help me with something",
+        "could you help me",
+        "can you help me",
+        "help me",
+        "need help",
+        "would need your help",
+        "need some help"
+      ]
+    },
+    "time_of_the_day": {
+      "includes": [
+        "what time of day",
+        "time of day",
+        "when is my package arriving time wise",
+        "time wise",
+        "what about the time",
+        "could you tell me approximate time",
+        "when is the delivery scheduled for time wise",
+        "could you tell me what time of day my package is going to arrive"
+      ]
+    },
+    "bye": {
+      "includes": [
+        "bye",
+        "good bye",
+        "thanks bye",
+        "nevermind",
+        "forget about it",
+        "we're done",
+        "take it easy",
+        "peace out",
+        "peace"
+      ],
+      "excludes": ["hello","hi"]
+    }
+  },
+ 
+  "entities": 
+  {
+    "day_of_week": 
+    {
+      "open_set": true,
+      "values": [
+        {
+          "value": "Monday",
+          "synonyms": ["monday", "Monday", "Lunes", "day one"]
+        },
+        {
+          "value": "Tuesday",
+          "synonyms": ["martes", "tuesday", "Tuesday", "day two"]
+        },
+        {
+          "value": "Wednesday",
+          "synonyms": ["Humpday", "miercoles", "wednesday", "Wednesday"]
+        },
+        {
+          "value": "Thursday",
+          "synonyms": ["jueves", "thursday", "Thursday"]
+        },
+        {
+          "value": "Friday",
+          "synonyms": ["TGIF", "viernes", "friday", "Friday"]
+        },
+        {
+          "value": "Saturday",
+          "synonyms": ["sabado", "on Saturday"]
+        },
+        {
+          "value": "Sunday",
+          "synonyms": ["domingo", "on Sunday"]
+        }
+      ]
+    },
+    "time_of_day": 
+    {
+      "open_set": true,
+      "values": [
+        {
+          "value": "morning",
+          "synonyms": ["early morning", "in the morning", "super early", "very early", "as early as possible", "around breakfast time", "breakfast time"]
+        },
+        {
+          "value": "afternoon",
+          "synonyms": ["mid day", "after the noon", "in the afternoon", "after twelve", "during lunch time", "at lunch", "around lunch time", "around lunch time"]
+        },
+        {
+          "value": "evening",
+          "synonyms": ["later the day", "in the evening", "dinner", "dinner time", "around dinner time", "sometime around dinner"]
+        }
+      ]
+    }
+  }
+}
