@@ -8,8 +8,7 @@
     "phrases": {
       "i_will_call_back": [
         {
-          "text": "Okay, I'll call you later. Bye!",
-          "voiceInfo": { "speed": 0.3, "variation": 5 }
+          "text": "Okay, I'll call you later. Bye!"
         }
       ],
       "hello": {
